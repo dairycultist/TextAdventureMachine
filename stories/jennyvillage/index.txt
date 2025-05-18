@@ -4,7 +4,15 @@
 }
 
 (TALKING talking.png) {
-    <q>I'm hoping to find a village,</q> quips Jenny. <q>I wanna buy some tools. Go mining. Get some <i>diamonds</i>...</q> The mere thought is enough to push herself into her own head, and for a decent number of paces she stares blankly down the trail, mumbling happily. Right as it seems like she's about to veer off into a tree, she suddenly throws her arm in front of her.
+    <q>I'm hoping to find a village,</q> quips Jenny. <q>I wanna buy some tools. Go mining. Get some <i>diamonds</i>...</q> The mere thought is enough to push herself into her own head, and for a decent number of paces she stares blankly down the trail, chirping to herself. Right as it seems like she's about to veer off into a tree, she suddenly throws her arm in front of her.
     <q>Look!</q>
     !SHEEP What is it?
+}
+
+(SHEEP sheep.png) {
+    Jenny dashes ahead and disappears behind the upcoming hill. Before you even have time to press your sprint key, she exclaims, <q>so fluffy!!</q>
+    Scaling the hill, you see what she's referring to: A flock of sheep grazing in a natural, grassy alcove.
+    <q>These are like, my favourite mob.</q> She pats one on the head, with it not even looking up from the grass it's intently gnawing on.
+    !MURDER_SHEEP You hungry?
+    !LEAVE_SHEEP They're cute! But we should keep moving.
 }
