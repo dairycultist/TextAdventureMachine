@@ -13,7 +13,7 @@
         .then(file => file.text())
         .then(text => {
 
-            const regex = /\((\w+) ([./\w]+)\) ?{([^{}]*)}/g;
+            const regex = /\((\w+) ([./\w]+)\) ?{\s*([^{}]*)\s*}/g;
             let match;
             
             while ((match = regex.exec(text)) !== null) {
