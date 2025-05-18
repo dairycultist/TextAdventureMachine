@@ -5,9 +5,11 @@
     <title>TextAdventureMachine</title>
     <script type="module">
 
+        const root = "stories/jennyvillage/";
+
         let scenes = {};
         
-        fetch("stories/jennyvillage/index.txt")
+        fetch(root + "index.txt")
         .then(file => file.text())
         .then(text => {
 
@@ -16,7 +18,7 @@
             
             while ((match = regex.exec(text)) !== null) {
                 
-                scenes[match[1]] = `<img src="${match[2]}">${match[3]}`;
+                scenes[match[1]] = `<img src="${root + match[2]}">${match[3]}`;
             }
 
             setScene("INDEX");
