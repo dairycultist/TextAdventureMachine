@@ -25,4 +25,11 @@
 
 (LEAVE_SHEEP dark_forest.png) {
     <q purple>Alrighty. Bye bye sheep~</q> she cooes, and you two head off once more, leaving the flock behind. Up ahead, a dense forest drapes a shadow onto your path.
+    <q purple>Woah, spooky.</p> Jenny stops and scans the path ahead. The thick leaf canopy blocks most light from reaching the substrate, making the entire forest a spawning ground for nasty monsters. Jenny peeps up, <q purple>Doesn't look too bad. We're well equipped.</q> She turns and locks eyes with you. <q purple>Are you scared?</p>
+    !PROTECT A little.
+    !PROTECT No...
+}
+
+(PROTECT hey_there.png) {
+    <q purple>Don't worry, I'll protect you, darling.</p>
 }
