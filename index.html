@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>TextAdventureMachine</title>
+    <script>
+        let scenes = {};
+        
+        function setScene(key) {
+
+            if (scenes[key] == undefined) {
+                document.getElementById("insert").innerHTML = `Error 404! Page "${key}" not yet implemented!`;
+            } else {
+                document.getElementById("insert").innerHTML = scenes[key];
+            }
+        }
+    </script>
     <script type="module">
 
         const root = "stories/jennyvillage/";
-
-        let scenes = {};
         
         fetch(root + "index.txt")
         .then(file => file.text())
@@ -34,15 +44,6 @@
 
             setScene("INDEX");
         });
-
-        function setScene(key) {
-
-            if (scenes[key] == undefined) {
-                document.getElementById("insert").innerHTML = `Error 404! Page "${key}" not yet implemented!`;
-            } else {
-                document.getElementById("insert").innerHTML = scenes[key];
-            }
-        }
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
