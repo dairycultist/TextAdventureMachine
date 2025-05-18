@@ -18,7 +18,12 @@
             
             while ((match = regex.exec(text)) !== null) {
                 
-                scenes[match[1]] = `<img src="${root + match[2]}">${match[3]}`;
+                scenes[match[1]] = `<img src="${root + match[2]}">`;
+
+                for (const line of match[3].split("\n")) {
+                    
+                    scenes[match[1]] += `<p>#${line}</p>`;
+                }
             }
 
             setScene("INDEX");
