@@ -1,0 +1,4 @@
+(START1 wandering.png) {
+    A bright, warm day. Your adventuring partner, Jenny, has just finished helping you pack up your temporary camp and together you two set off. In your pack, a couple stacks of logs, some iron, some beds. In hers, the emeralds that you plan to barter with whoever you first reach that will take them. They clink softly every time the bag they're in bounces off her leg.
+    !START2 I'm ready for adventure!
+}
