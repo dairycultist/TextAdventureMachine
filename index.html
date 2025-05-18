@@ -22,10 +22,10 @@
 
                 for (const line of match[3].split("\n")) {
 
-                    if (line[0] === "!") {
+                    if (line.substring(0, 1) === "!") {
                         scenes[match[1]] += `<button type="button" onclick="setScene('TEST');">test</button>`;
                     } else {
-                        scenes[match[1]] += `<p>#${line}</p>`;
+                        scenes[match[1]] += `<p>${line}</p>`;
                     }
                 }
             }
