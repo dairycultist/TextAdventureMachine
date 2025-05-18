@@ -9,11 +9,11 @@
         .then(file => file.text())
         .then(text => {
 
-            const regex = /\[\w*\]/g;
-            let array;
+            const regex = /\((\w+) ([./\w]+)\) ?{([^{}]*)}/g;
+            let match;
             
-            while ((array = regex.exec(text)) !== null) {
-                document.getElementById("insert").innerText += `Found "${array[0]}".`;
+            while ((match = regex.exec(text)) !== null) {
+                document.getElementById("insert").innerText += match[1] + "<br>" + match[2] + "<br>" + match[3] + "<hr>";
             }
         });
     </script>
