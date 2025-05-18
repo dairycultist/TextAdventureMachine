@@ -13,14 +13,12 @@
             let match;
             
             while ((match = regex.exec(text)) !== null) {
-                document.getElementById("insert").innerText += match[1] + "<br>" + match[2] + "<br>" + match[3] + "<hr>";
+                document.getElementById("insert").innerHTML += match[1] + "<br>" + match[2] + "<br>" + match[3] + "<hr>";
             }
         });
     </script>
 </head>
 <body>
-    Story
-
     <div id="insert">
         
     </div>
