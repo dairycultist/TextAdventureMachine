@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>TextAdventureMachine</title>
     <script type="module">
+
+        let scenes = {};
         
         fetch("stories/jennyvillage/index.txt")
         .then(file => file.text())
@@ -13,10 +15,21 @@
             let match;
             
             while ((match = regex.exec(text)) !== null) {
-                document.getElementById("insert").innerHTML += match[1] + "<br>" + match[2] + "<br>" + match[3] + "<hr>";
+                
+                scenes[match[1]] = `<img src="${match[2]}">${match[3]}`;
             }
+
+            setScene("INDEX");
         });
+
+        function setScene(key) {
+
+            document.getElementById("insert").innerHTML = scenes[key];
+        }
     </script>
+    <style>
+        img { width: 100%; display: block; margin: 1em 0; }
+    </style>
 </head>
 <body>
     <div id="insert">
