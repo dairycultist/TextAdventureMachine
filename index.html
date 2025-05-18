@@ -35,7 +35,7 @@
                     line = line.trim();
 
                     if (line[0] === "!") {
-                        let lineMatch = /!(\w*) (.*)/.exec(line);
+                        let lineMatch = /!(\w+) (.*)/.exec(line);
                         scenes[match[1]] += `<button type="button" onclick="setScene('${lineMatch[1]}');">${lineMatch[2]}</button>`;
                     } else {
                         scenes[match[1]] += `<p>${line}</p>`;
