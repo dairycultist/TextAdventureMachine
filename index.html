@@ -20,9 +20,11 @@
                 
                 scenes[match[1]] = `<img src="${root + match[2]}">`;
 
-                for (const line of match[3].split("\n")) {
+                for (let line of match[3].split("\n")) {
 
-                    if (line.substring(0, 1) === "!") {
+                    line = line.trim();
+
+                    if (line[0] === "!") {
                         scenes[match[1]] += `<button type="button" onclick="setScene('TEST');">test</button>`;
                     } else {
                         scenes[match[1]] += `<p>${line}</p>`;
