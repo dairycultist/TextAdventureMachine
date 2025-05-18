@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TextAdventureMachine</title>
+    <script type="module">
+        
+        fetch("stories/jennyvillage/index.txt")
+        .then(file => file.text())
+        .then(text => {
+            document.getElementById("insert").innerText = text;
+        });
+    </script>
+</head>
+<body>
+    Story
+
+    <div id="insert">
+        
+    </div>
+</body>
+</html>
