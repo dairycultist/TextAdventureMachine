@@ -8,7 +8,13 @@
         fetch("stories/jennyvillage/index.txt")
         .then(file => file.text())
         .then(text => {
-            document.getElementById("insert").innerText = text;
+
+            const regex = /\[\w*\]/g;
+            let array;
+            
+            while ((array = regex.exec(text)) !== null) {
+                document.getElementById("insert").innerText += `Found "${array[0]}".`;
+            }
         });
     </script>
 </head>
