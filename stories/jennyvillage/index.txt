@@ -31,6 +31,6 @@
 }
 
 (PROTECT hey_there.png) {
-    <q purple>Don't worry, I'll protect you, darling.</p>
+    <q purple>Don't worry, I'll protect you, darling.</q>
     !IN_FOREST I appreciate it, Jenny.
 }
