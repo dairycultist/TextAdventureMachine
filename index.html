@@ -21,8 +21,12 @@
                 scenes[match[1]] = `<img src="${root + match[2]}">`;
 
                 for (const line of match[3].split("\n")) {
-                    
-                    scenes[match[1]] += `<p>#${line}</p>`;
+
+                    if (line[0] === "!") {
+                        scenes[match[1]] += `<button type="button" onclick="setScene('TEST');">test</button>`;
+                    } else {
+                        scenes[match[1]] += `<p>#${line}</p>`;
+                    }
                 }
             }
 
@@ -31,7 +35,11 @@
 
         function setScene(key) {
 
-            document.getElementById("insert").innerHTML = scenes[key];
+            if (scenes[key] == undefined) {
+                document.getElementById("insert").innerHTML = "Error 404! Page \"${key}\" not yet implemented!";
+            } else {
+                document.getElementById("insert").innerHTML = scenes[key];
+            }
         }
     </script>
     <style>
