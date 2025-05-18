@@ -36,7 +36,7 @@
         function setScene(key) {
 
             if (scenes[key] == undefined) {
-                document.getElementById("insert").innerHTML = "Error 404! Page \"${key}\" not yet implemented!";
+                document.getElementById("insert").innerHTML = `Error 404! Page "${key}" not yet implemented!`;
             } else {
                 document.getElementById("insert").innerHTML = scenes[key];
             }
