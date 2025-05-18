@@ -1,4 +1,10 @@
 (INDEX wandering.png) {
-    A bright, warm day. Your adventuring partner, Jenny, has just finished helping you pack up your temporary camp and together you two set off. In your pack, a couple stacks of logs, some iron, some beds. In hers, the emeralds that you plan to barter with whoever you first reach that will take them. They clink softly every time the bag they're in bounces off her leg.
-    !START1 I'm ready for adventure!
+    A bright, warm day. Your adventuring partner, Jenny, has just finished helping you pack up your temporary camp and together you two set off. In your pack, a couple stacks of logs, some iron, some beds. In hers, the emeralds that you plan to barter with whoever you first reach that will take them. They clink softly every time the bag they're in bounces off her body.
+    !TALKING I'm ready for adventure!
+}
+
+(TALKING talking.png) {
+    <q>I'm hoping to find a village,</q> quips Jenny. <q>I wanna buy some tools. Go mining. Get some <i>diamonds</i>...</q> The mere thought is enough to push herself into her own head, and for a decent number of paces she stares blankly down the trail, mumbling happily. Right as it seems like she's about to veer off into a tree, she suddenly throws her arm in front of her.
+    <q>Look!</q>
+    !SHEEP What is it?
 }
