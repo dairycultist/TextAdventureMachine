@@ -4,15 +4,25 @@
 }
 
 (TALKING talking.png) {
-    <q>I'm hoping to find a village,</q> quips Jenny. <q>I wanna buy some tools. Go mining. Get some <i>diamonds</i>...</q> The mere thought is enough to push herself into her own head, and for a decent number of paces she stares blankly down the trail, chirping to herself. Right as it seems like she's about to veer off into a tree, she suddenly throws her arm in front of her.
-    <q>Look!</q>
+    <q purple>I'm hoping to find a village,</q> quips Jenny. <q purple>I wanna buy some tools. Go mining. Get some <i>diamonds</i>...</q> The mere thought is enough to push her into her own head, and for a decent number of paces she stares blankly down the trail, chirping to herself. Right as it seems like she's about to veer off into a tree, she suddenly throws her arm in front of her.
+    <q purple>Look!</q>
     !SHEEP What is it?
 }
 
 (SHEEP sheep.png) {
-    Jenny dashes ahead and disappears behind the upcoming hill. Before you even have time to press your sprint key, she exclaims, <q>so fluffy!!</q>
+    Jenny dashes ahead and disappears behind the upcoming hill. Before you even have time to press your sprint key, she exclaims, <q purple>so fluffy!!</q>
     Scaling the hill, you see what she's referring to: A flock of sheep grazing in a natural, grassy alcove.
-    <q>These are like, my favourite mob.</q> She pats one on the head, with it not even looking up from the grass it's intently gnawing on.
+    <q purple>These are like, my favourite mob.</q> She pats one on the head, and it bleets gently.
     !MURDER_SHEEP You hungry?
     !LEAVE_SHEEP They're cute! But we should keep moving.
+}
+
+(MURDER_SHEEP -) {
+    She lifts her hand from the sheep and reaches into her inventory. <q purple>Yeah.</q> In a blur, the sheep disappears in a block of red, leaving Jenny standing there smugly with an iron sword in one hand and some mutton in the other.
+    <q purple>Two pieces! We can share.</q>
+    !LEAVE_SHEEP When we find a village!
+}
+
+(LEAVE_SHEEP -) {
+    <q purple>Alrighty. Bye bye sheep~</q> she cooes, and you two head off once more, leaving the flock behind. Up ahead, a dense forest drapes a shadow onto your path.
 }
